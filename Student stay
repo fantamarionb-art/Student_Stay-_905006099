@@ -1,0 +1,305 @@
+
+
+ Home page — index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentStay | Student Accommodation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">StudentStay</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="accommodation.html">Accommodation</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">YOUR STUDENT HOME</p>
+        <h1>Find a place to feel at home.</h1>
+        <p>Discover comfortable student accommodation
+          and make your student life easier.</p>
+        <a class="button" href="accommodation.html">
+          Explore Rooms
+        </a>
+        <a class="button secondary" href="about.html">
+          About Us
+        </a>
+      </div>
+      <img
+        src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1000&q=80"
+        alt="Comfortable modern bedroom">
+    </section>
+
+    <section class="section">
+      <h2>Why Choose StudentStay?</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Comfortable Rooms</h3>
+          <p>Explore room options for different student needs.</p>
+        </article>
+        <article class="card">
+          <h3>Student Support</h3>
+          <p>Find useful information for moving and settling in.</p>
+        </article>
+        <article class="card">
+          <h3>Easy Navigation</h3>
+          <p>Browse our website on your phone, tablet or computer.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="callout">
+      <h2>Ready to find your student home?</h2>
+      <a class="button light" href="contact.html">Contact Us</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> StudentStay. Student accommodation website.</p>
+  </footer>
+</body>
+</html>
+
+About page — about.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | StudentStay</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">StudentStay</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="accommodation.html">Accommodation</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <p class="eyebrow">ABOUT US</p>
+    <h1>Helping students feel at home.</h1>
+    <img class="wide-image"
+      src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1200&q=80"
+      alt="University students on campus">
+    <h2>Our Mission</h2>
+    <p>StudentStay aims to make student accommodation
+      information easier to understand and explore.</p>
+    <h2>Our Vision</h2>
+    <p>We want students to feel welcomed, supported and
+      prepared for their accommodation journey.</p>
+    <a class="button" href="accommodation.html">View Rooms</a>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> StudentStay</p>
+  </footer>
+</body>
+</html>
+
+Accommodation page — accommodation.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accommodation | StudentStay</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">StudentStay</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="accommodation.html">Accommodation</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <h1>Our Accommodation</h1>
+    <p>Choose a room type to explore.</p>
+
+    <label for="room-filter">Filter room types:</label>
+    <select id="room-filter">
+      <option value="all">All rooms</option>
+      <option value="shared">Shared rooms</option>
+      <option value="private">Private rooms</option>
+      <option value="studio">Studio rooms</option>
+    </select>
+
+    <div class="cards room-list">
+      <article class="card room" data-type="shared">
+        <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80"
+          alt="Bedroom with natural light">
+        <h2>Shared Room</h2>
+        <p>A social living option for students.</p>
+        <a class="button" href="contact.html?room=Shared%20Room">Enquire</a>
+      </article>
+
+      <article class="card room" data-type="private">
+        <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=800&q=80"
+          alt="Private bedroom">
+        <h2>Private Room</h2>
+        <p>Your own space for rest and study.</p>
+        <a class="button" href="contact.html?room=Private%20Room">Enquire</a>
+      </article>
+
+      <article class="card room" data-type="studio">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
+          alt="Modern studio interior">
+        <h2>Studio Room</h2>
+        <p>A compact space for independent living.</p>
+        <a class="button" href="contact.html?room=Studio%20Room">Enquire</a>
+      </article>
+    </div>
+    <p class="note">Room images and categories are examples.
+      Confirm actual prices and availability with providers.</p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> StudentStay</p>
+  </footer>
+</body>
+</html>
+
+Services page — services.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | StudentStay</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">StudentStay</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="accommodation.html">Accommodation</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <h1>Student Services</h1>
+    <p>Useful guidance for your student accommodation journey.</p>
+
+    <div class="cards">
+      <article class="card">
+        <h2>Accommodation Guidance</h2>
+        <p>Compare room types and prepare questions before booking.</p>
+      </article>
+      <article class="card">
+        <h2>Moving-In Checklist</h2>
+        <label><input type="checkbox"> Confirm accommodation address</label>
+        <label><input type="checkbox"> Check costs and payment terms</label>
+        <label><input type="checkbox"> Pack study essentials</label>
+        <label><input type="checkbox"> Confirm facilities</label>
+      </article>
+      <article class="card">
+        <h2>Student Living Tips</h2>
+        <p>Keep shared spaces tidy, respect quiet hours and plan study time.</p>
+      </article>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>Does StudentStay confirm room availability?</summary>
+      <p>No. Contact the actual accommodation provider to confirm availability.</p>
+    </details>
+    <details>
+      <summary>Can I use the website on a phone?</summary>
+      <p>Yes. The responsive layout adapts to different screen sizes.</p>
+    </details>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> StudentStay</p>
+  </footer>
+</body>
+</html>
+
+Contact page — contact.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | StudentStay</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">StudentStay</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="accommodation.html">Accommodation</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="section contact-section">
+    <h1>Contact StudentStay</h1>
+    <p>Have a question? Send us an enquiry.</p>
+
+    <form id="contact-form">
+      <label for="name">Full Name</label>
+      <input id="name" name="name" required minlength="2">
+
+      <label for="email">Email Address</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="topic">Enquiry Topic</label>
+      <select id="topic" name="topic">
+        <option>General Question</option>
+        <option>Shared Room</option>
+        <option>Private Room</option>
+        <option>Studio Room</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+
+      <button class="button" type="submit">Submit Enquiry</button>
+      <p id="form-status" role="status"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> StudentStay</p>
+  </footer>
+</body>
+</html>
