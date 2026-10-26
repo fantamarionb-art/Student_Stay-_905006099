@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | StudentStay</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">StudentStay</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="accommodation.html">Accommodation</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="section contact-section">
+    <h1>Contact StudentStay</h1>
+    <p>Have a question? Send us an enquiry.</p>
+
+    <form id="contact-form">
+      <label for="name">Full Name</label>
+      <input id="name" name="name" required minlength="2">
+
+      <label for="email">Email Address</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="topic">Enquiry Topic</label>
+      <select id="topic" name="topic">
+        <option>General Question</option>
+        <option>Shared Room</option>
+        <option>Private Room</option>
+        <option>Studio Room</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+
+      <button class="button" type="submit">Submit Enquiry</button>
+      <p id="form-status" role="status"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> StudentStay</p>
+  </footer>
+</body>
+</html>

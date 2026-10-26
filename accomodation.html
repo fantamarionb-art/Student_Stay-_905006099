@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accommodation | StudentStay</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">StudentStay</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="accommodation.html">Accommodation</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <h1>Our Accommodation</h1>
+    <p>Choose a room type to explore.</p>
+
+    <label for="room-filter">Filter room types:</label>
+    <select id="room-filter">
+      <option value="all">All rooms</option>
+      <option value="shared">Shared rooms</option>
+      <option value="private">Private rooms</option>
+      <option value="studio">Studio rooms</option>
+    </select>
+
+    <div class="cards room-list">
+      <article class="card room" data-type="shared">
+        <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80"
+          alt="Bedroom with natural light">
+        <h2>Shared Room</h2>
+        <p>A social living option for students.</p>
+        <a class="button" href="contact.html?room=Shared%20Room">Enquire</a>
+      </article>
+
+      <article class="card room" data-type="private">
+        <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=800&q=80"
+          alt="Private bedroom">
+        <h2>Private Room</h2>
+        <p>Your own space for rest and study.</p>
+        <a class="button" href="contact.html?room=Private%20Room">Enquire</a>
+      </article>
+
+      <article class="card room" data-type="studio">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
+          alt="Modern studio interior">
+        <h2>Studio Room</h2>
+        <p>A compact space for independent living.</p>
+        <a class="button" href="contact.html?room=Studio%20Room">Enquire</a>
+      </article>
+    </div>
+    <p class="note">Room images and categories are examples.
+      Confirm actual prices and availability with providers.</p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> StudentStay</p>
+  </footer>
+</body>
+</html>
